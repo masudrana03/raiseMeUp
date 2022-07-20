@@ -264,6 +264,10 @@ h4 {
   margin-top: 134px;
 }
 
+.mt-0 {
+  margin-top: 15px;
+}
+
 .my-20 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -301,6 +305,10 @@ h4 {
 
 .text-black {
   color: #000 !important;
+}
+
+.text-white {
+  color: #fff !important;
 }
 .text-center {
   text-align: center;
@@ -389,10 +397,13 @@ h4 {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding: 8px;
+  padding: 8px 12px;
   display: block;
-  height: 29px;
+  height: 36px;
   width: 100%;
+  border: 1px solid #d9d9d9;
+  background-color: #d9d9d933;
+  border-radius: 5px;
 }
 .form-control:focus,
 .form-select:focus {
@@ -622,4 +633,26 @@ input[type="email"] {
   margin-bottom: 44vh;
   padding-left: 34px;
   padding-right: 34px;
+}
+
+/* Dashboard  css */
+
+.top-bar {
+  border-bottom: 1px solid #f32453;
+}
+.dashbord-logo {
+  width: 134px;
+}
+
+.dashbord-tittle {
+  background-color: #f32453;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.dashbord-tittle h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e4e4e4;
+  line-height: 29px;
 }

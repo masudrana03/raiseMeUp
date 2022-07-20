@@ -14,63 +14,58 @@
 
 <body>
     <div class="wrapper bg-color">
-        <div class="logo pt-42 mb-40">
-            <a href="index.html"><img class="img-fluid" src="assets/img/logo.png" alt=""></a>
+        <h6 class="top-bar pt-42"></h6>
+        <div class="my-20">
+            <a href="index.html"><img class="img-fluid dashbord-logo" src="assets/img/logo.png" alt=""></a>
+        </div>
+
+        <div class="mb-40 dashbord-tittle">
+            <h4 class="text-center">Handle with Care Incident</h4>
         </div>
         <div class="section px-24">
             <form class="form px-25" action="#">
                 <div class="mb-32">
-                    <!-- Fast Name -->
+                    <!-- State -->
                     <div class="form-group fmb-0">
-                        <label for="First Name" class="form-label">First Name</label>
-                        <input type="text" class="form-control form-material" required placeholder="First Name">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control form-material" name="state" required placeholder="State">
                         <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
-                    <!-- Last Name -->
+                    <!-- County -->
                     <div class="form-group fmb-0 pt-24">
-                        <label for="Last Name" class="form-label">Last Name</label>
-                        <input type="text" class="form-control form-material" placeholder="First Name">
+                        <label for="County" class="form-label">County</label>
+                        <input type="text" class="form-control form-material" name="county" placeholder="County">
                         <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
-                    <!-- Email -->
+                    <!-- School Levels -->
                     <div class="form-group fmb-0 pt-24">
-                        <label for="Email" class="form-label">Email</label>
-                        <input type="email" class="form-control form-material" required placeholder="Email">
+                        <label for="School Levels" class="form-label">School Levels</label>
+                        <!-- <input type="text" class="form-control form-material" name="school_levels" placeholder="County"> -->
+                        <select name="school_levels" class="form-control form-material">
+                            <option selected>Select Schoole</option>
+                            <option id="elementary" value="elementary">Elementary School</option>
+                            <option id="middle" value="middle">Middle School</option>
+                            <option id="high" value="high">High School</option>
+                        </select>
                         <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
-                    <!-- Agency -->
+                    <!-- School Levels -->
                     <div class="form-group fmb-0 pt-24">
-                        <label for="agency" class="form-label">Agency</label>
-                        <input type="text" class="form-control form-material" placeholder="Agency">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
-                    </div>
-
-                    <div class="form-group fmb-0 pt-24">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control form-material" required placeholder="********">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
-                    </div>
-
-                    <div class="form-group fmb-0 pt-24">
-                        <label for="password_confirmation" class="form-label">Cnfirm Password</label>
-                        <input type="password" required class="form-control form-material" placeholder="********">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
-                    </div>
-
-                    <!-- <div class="pt-14">
-                        <span class="form-check form-material form-check-32">
-                            <input class="form-check-input" type="checkbox" id="checkChecked">
-                            <label class="form-check-label" for="checkChecked">Remember me</label>
+                        <!-- <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control form-material" name="state" required placeholder="State"> -->
+                        <span class="form-check form-material">Dutchtown High - DHS
+                            <input class="form-check-input" type="radio" value="Dutchtown High - DHS" />
                         </span>
-                    </div> -->
+                        <!-- <span class="pass-icon">&nbsp;</span> -->
+                    </div>
                 </div>
 
 
-                <button class="btn d-block px-28" type="submit">REGISTER</button>
-                <p class="text-signup text-center pt-14"><a href="login.html">Already registered?</a></p>
+                <button class="btn d-block px-28" type="submit">Next</button>
+
             </form>
         </div>
     </div>

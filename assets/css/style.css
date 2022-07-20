@@ -109,6 +109,9 @@ h4 {
 .pb-18 {
   padding-bottom: 18px;
 }
+.pb-30 {
+  padding-bottom: 30px;
+}
 
 
 .px-12 {
@@ -557,22 +560,6 @@ input[type="radio"]:checked {
   background-size: 12px 10px;
 }
 
-.form-check-radio-input:checked[type="radio"] {
-  /* background-image: url("../img/radio-check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 16px;
-  border-radius: 100%; */
-
-  /* background-color: initial;
-    cursor: default;
-    appearance: auto;
-    box-sizing: border-box;
-    margin: 3px 3px 0px 5px;
-    padding: initial;
-    border: initial; */
-}
-
 .form-check-32 {
   padding-left: 32px;
 }
@@ -612,7 +599,7 @@ input[type="radio"]:checked {
 
 /* common  section */
 
-.section h1 {
+/* .section h1 {
 }
 .section h2 {
   font-size: 36px;
@@ -623,7 +610,7 @@ input[type="radio"]:checked {
 
 .section {
   width: 100%;
-}
+} */
 
 .wrapper {
   min-height: 100vh;

@@ -43,7 +43,7 @@
                     <div class="form-group fmb-0 pt-24 mb-20">
                         <label for="School Levels" class="form-label">School Levels</label>
                         <!-- <input type="text" class="form-control form-material" name="school_levels" placeholder="County"> -->
-                        <select name="school_levels" class="form-control form-material">
+                        <select name="school_levels" class="form-control form-material school-click">
                             <option selected>Select Schoole</option>
                             <option id="elementary" value="elementary">Elementary School</option>
                             <option id="middle" value="middle">Middle School</option>
@@ -54,7 +54,7 @@
 
                     <!-- School Levels -->
 
-                    <div class="elementary item-inner">
+                    <div id="elementarySchool" class="elementary item-inner">
                         <div class="form-group fmb-0">
                             <div class="form-material">
                                 <input type="radio" id="radio1" value="Austin Road Elementary - ARE">
@@ -142,6 +142,38 @@
                     </div>
 
 
+                    <div id="middleSchool" class="middle item-inner">
+                        <div class="form-group fmb-0">
+                            <div class="form-material">
+                                <input type="radio" id="radio1" value="Austin Road Middle - ARE">
+                                <label class="checkbox" for="radio1">Austin Road Middle - ARE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio1" value="Austin Road Middle - ARE">
+                                <label class="checkbox" for="radio1">Austin Road Middle - ARE</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="highSchool" class="middle item-inner">
+                        <div class="form-group fmb-0">
+                            <div class="form-material">
+                                <input type="radio" id="radio1" value="Austin High - ARE">
+                                <label class="checkbox" for="radio1">Austin Road High - ARE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio1" value="Austin High - ARE">
+                                <label class="checkbox" for="radio1">Austin Road High - ARE</label>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </div>
 
@@ -154,7 +186,28 @@
 
     <script>
         $(document).ready(function () {
-            // alert('Hello');
+            $("#elementarySchool").hide();
+            $("#middleSchool").hide();
+            $("#highSchool").hide();
+
+            $(".school-click").click(function(event) {
+                event.preventDefault();
+                var value = $(this).val();
+                if(value == "elementary"){
+                    $("#elementarySchool").show();
+                    $("#middleSchool").hide();
+                    $("#highSchool").hide();
+                }else if(value == "middle"){
+                    $("#elementarySchool").hide();
+                    $("#middleSchool").show();
+                    $("#highSchool").hide();
+                }else if(value == "high"){
+                    $("#elementarySchool").hide();
+                    $("#middleSchool").hide();
+                    $("#highSchool").show();
+                }
+
+            });
         });
     </script>
 </body>

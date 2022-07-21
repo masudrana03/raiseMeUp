@@ -16,7 +16,38 @@
     <div class="wrapper bg-color">
         <h6 class="top-bar pt-42"></h6>
         <div class="my-20">
-            <a href="index.html"><img class="img-fluid dashbord-logo" src="assets/img/logo.png" alt=""></a>
+            <a href="index.html">
+                <img class="img-fluid dashbord-logo" src="assets/img/logo.png" alt="">
+            </a>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="main-menu fade d-none">
+            <div class="menu-dialog menu-width menu-r">
+                <div class="cross">
+                    <a href="#">
+                        <img class="cross-icon" src="assets/img/cross.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile">
+                    <h3 class="profile-name">Md User Name</h3>
+                </div>
+                <div class="menu pt-96 mr-36"">
+                    <ul class="">
+                        <li class=" menu-list"><a class="menu-link text-d text-white" href="#">Dashboard</a></li>
+                    <li class="menu-list pt-8"><a class="menu-link text-d text-white" href="#">Logout</a> </li>
+                    <!-- <li><a href="#">About</a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- mobile menu icon -->
+        <div class="menu-icon">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
         </div>
 
         <div class="mb-40 dashbord-tittle">
@@ -29,151 +60,347 @@
                     <div class="form-group fmb-0">
                         <label for="state" class="form-label">State</label>
                         <input type="text" class="form-control form-material" name="state" required placeholder="State">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
                     <!-- County -->
                     <div class="form-group fmb-0 pt-24">
                         <label for="County" class="form-label">County</label>
                         <input type="text" class="form-control form-material" name="county" placeholder="County">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
                     <!-- School Levels -->
                     <div class="form-group fmb-0 pt-24 mb-20">
                         <label for="School Levels" class="form-label">School Levels</label>
-                        <!-- <input type="text" class="form-control form-material" name="school_levels" placeholder="County"> -->
                         <select name="school_levels" class="form-control form-material school-click">
                             <option selected>Select Schoole</option>
                             <option id="elementary" value="elementary">Elementary School</option>
                             <option id="middle" value="middle">Middle School</option>
                             <option id="high" value="high">High School</option>
                         </select>
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
-                    <!-- School Levels -->
+                    <!-- Elementary School -->
 
                     <div id="elementarySchool" class="elementary item-inner">
                         <div class="form-group fmb-0">
                             <div class="form-material">
-                                <input type="radio" id="radio1" value="Austin Road Elementary - ARE">
+                                <input type="radio" id="radio1" name="school_name" value="Austin Road Elementary - ARE">
                                 <label class="checkbox" for="radio1">Austin Road Elementary - ARE</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio2" name="school_name" value="Bethelehem Elementary - BES">
+                                <label class="checkbox" for="radio2">Bethelehem Elementary - BES</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio3" name="school_name"
+                                    value="Cotton Indian Elementary - CIE">
+                                <label class="checkbox" for="radio3">Cotton Indian Elementary - CIE</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio4" name="school_name" value="Dutchtown Elementary - DES">
+                                <label class="checkbox" for="radio4">Dutchtown Elementary - DES</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio5" name="school_name" value="East Lake Elementary - ELE">
+                                <label class="checkbox" for="radio5">East Lake Elementary - ELE</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio6" name="school_name" value="Fairview Elementary - FVE">
+                                <label class="checkbox" for="radio6">Fairview Elementary - FVE</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio8" name="school_name" value="Flippen Elementary - FES">
+                                <label class="checkbox" for="radio8">Flippen Elementary - FES</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio9" name="school_name" value="Hampton Elementary - HES">
+                                <label class="checkbox" for="radio9">Hampton Elementary - HES</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio10" name="school_name"
+                                    value="Hickory Flat Elementary - HFE">
+                                <label class="checkbox" for="radio10">Hickory Flat Elementary - HFE</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio11" name="school_name"
+                                    value="Locust Grove Elementary - LGE">
+                                <label class="checkbox" for="radio11">Locust Grove Elementary - LGE</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio12" name="school_name" value="Luella Elementary - LES">
+                                <label class="checkbox" for="radio12">Luella Elementary - LES</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio13" name="school_name" value="Mt. Carmel Elementary - MCE">
+                                <label class="checkbox" for="radio13">Mt. Carmel Elementary - MCE</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio14" name="school_name" value="New Hope Elementary - NHE">
+                                <label class="checkbox" for="radio14">New Hope Elementary - NHE</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio2" value="Austin Road Elementary - ARE">
-                                <label class="checkbox" for="radio2">Austin Road Elementary - ARE</label>
+                                <input type="radio" id="radio15" name="school_name" value="Oakland Elementary - OAK">
+                                <label class="checkbox" for="radio15">Oakland Elementary - OAK</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio16" name="school_name" value="Ola Elementary - OES">
+                                <label class="checkbox" for="radio16">Ola Elementary - OES</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio17" name="school_name"
+                                    value="Pate's Creek Elementary - PCE">
+                                <label class="checkbox" for="radio17">Pate's Creek Elementary - PCE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio18" name="school_name"
+                                    value="Pleasant Grove Elementary - PGE">
+                                <label class="checkbox" for="radio18">Pleasant Grove Elementary - PGE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio19" name="school_name" value="Red Oak Elementary - ROE">
+                                <label class="checkbox" for="radio19">Red Oak Elementary - ROE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio20" name="school_name"
+                                    value="Rock Spring Elementary - RSE">
+                                <label class="checkbox" for="radio20">Rock Spring Elementary - RSE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio21" name="school_name"
+                                    value="Rocky Creek Elementary - RCE">
+                                <label class="checkbox" for="radio21">Rocky Creek Elementary - RCE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio22" name="school_name"
+                                    value="Smith-Barnes Elementary - SBE">
+                                <label class="checkbox" for="radio22">Smith-Barnes Elementary - SBE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio23" name="school_name"
+                                    value="Stockbridge Elementary - SES">
+                                <label class="checkbox" for="radio23">Stockbridge Elementary - SES</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio24" name="school_name"
+                                    value="Timber Ridge Elementary - TRE">
+                                <label class="checkbox" for="radio24">Timber Ridge Elementary - TRE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio25" name="school_name" value="Tussahaw Elementary - TES">
+                                <label class="checkbox" for="radio25">Tussahaw Elementary - TES</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio26" name="school_name"
+                                    value="Unity Grove Elementary - UGE">
+                                <label class="checkbox" for="radio26">Unity Grove Elementary - UGE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio27" name="school_name"
+                                    value="Walnut Creek Elementary - WCE">
+                                <label class="checkbox" for="radio27">Walnut Creek Elementary - WCE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio28" name="school_name"
+                                    value="Wesley Lakes Elementary - WLE">
+                                <label class="checkbox" for="radio28">Wesley Lakes Elementary - WLE</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio29" name="school_name" value="Woodland Elementary - WES">
+                                <label class="checkbox" for="radio29">Woodland Elementary - WES</label>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Middle School -->
 
                     <div id="middleSchool" class="middle item-inner">
                         <div class="form-group fmb-0">
                             <div class="form-material">
-                                <input type="radio" id="radio1" value="Austin Road Middle - ARE">
-                                <label class="checkbox" for="radio1">Austin Road Middle - ARE</label>
+                                <input type="radio" id="radio30" name="school_name" value="Austin Road Middle - ARM">
+                                <label class="checkbox" for="radio30">Austin Road Middle - ARM</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio1" value="Austin Road Middle - ARE">
-                                <label class="checkbox" for="radio1">Austin Road Middle - ARE</label>
+                                <input type="radio" id="radio31" name="school_name" value="Dutchtown Middle - DES">
+                                <label class="checkbox" for="radio31">Dutchtown Middle - DES</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio32" name="school_name"
+                                    value="Eagle's Landing Middle - ELM">
+                                <label class="checkbox" for="radio32">Eagle's Landing Middle - ELM</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio33" name="school_name" value="Hampton Middle - HMS">
+                                <label class="checkbox" for="radio33">Hampton Middle - HMS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio34" name="school_name" value="Locust Grove MIddle - LGM">
+                                <label class="checkbox" for="radio34">Locust Grove MIddle - LGM</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio35" name="school_name" value="Luella Middle - LMS">
+                                <label class="checkbox" for="radio35">Luella Middle - LMS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio36" name="school_name" value="McDonough Middle - MMS">
+                                <label class="checkbox" for="radio36">McDonough Middle - MMS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio37" name="school_name" value="Ola Middle - OMS">
+                                <label class="checkbox" for="radio37">Ola Middle - OMS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio38" name="school_name" value="Stockbridge Middle - SMS">
+                                <label class="checkbox" for="radio38">Stockbridge Middle - SMS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio39" name="school_name" value="Union Grove Middle - UGM">
+                                <label class="checkbox" for="radio39">Union Grove Middle - UGM</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio40" name="school_name" value="Woodland Middle - WMS">
+                                <label class="checkbox" for="radio40">Woodland Middle - WMS</label>
                             </div>
                         </div>
                     </div>
 
+                    <!-- High School -->
 
                     <div id="highSchool" class="middle item-inner">
                         <div class="form-group fmb-0">
                             <div class="form-material">
-                                <input type="radio" id="radio1" value="Austin High - ARE">
-                                <label class="checkbox" for="radio1">Austin Road High - ARE</label>
+                                <input type="radio" id="radio51" name="school_name" value="Dutchtown High - DHS">
+                                <label class="checkbox" for="radio51">Dutchtown High - DHS</label>
                             </div>
                         </div>
                         <div class="form-group fmb-0 pt-8">
                             <div class="form-material">
-                                <input type="radio" id="radio1" value="Austin High - ARE">
-                                <label class="checkbox" for="radio1">Austin Road High - ARE</label>
+                                <input type="radio" id="radio52" name="school_name" value="Eagle's Landing High - ELHS">
+                                <label class="checkbox" for="radio52">Eagle's Landing High - ELHS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio53" name="school_name" value="Hampton High - HHS">
+                                <label class="checkbox" for="radio53">Hampton High - HHS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio54" name="school_name" value="Locust Grove High - LGH">
+                                <label class="checkbox" for="radio54">Locust Grove High - LGH</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio55" name="school_name" value="Luella High - LHS">
+                                <label class="checkbox" for="radio55">Luella High - LHS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio56" name="school_name" value="McDonough High - MHS">
+                                <label class="checkbox" for="radio56">McDonough High - MHS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio57" name="school_name" value="Ola High - OHS">
+                                <label class="checkbox" for="radio57">Ola High - OHS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio58" name="school_name" value="Stockbridge High - SHS">
+                                <label class="checkbox" for="radio58">Stockbridge High - SHS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio59" name="school_name" value="Union Grove High - UGHS">
+                                <label class="checkbox" for="radio59">Union Grove High - UGHS</label>
+                            </div>
+                        </div>
+                        <div class="form-group fmb-0 pt-8">
+                            <div class="form-material">
+                                <input type="radio" id="radio60" name="school_name" value="Woodland High - WHS">
+                                <label class="checkbox" for="radio60">Woodland High - WHS</label>
                             </div>
                         </div>
                     </div>
-
-
 
                 </div>
 
@@ -190,24 +417,35 @@
             $("#middleSchool").hide();
             $("#highSchool").hide();
 
-            $(".school-click").click(function(event) {
+            $(".school-click").click(function (event) {
                 event.preventDefault();
                 var value = $(this).val();
-                if(value == "elementary"){
+                if (value == "elementary") {
                     $("#elementarySchool").show();
                     $("#middleSchool").hide();
                     $("#highSchool").hide();
-                }else if(value == "middle"){
+                } else if (value == "middle") {
                     $("#elementarySchool").hide();
                     $("#middleSchool").show();
                     $("#highSchool").hide();
-                }else if(value == "high"){
+                } else if (value == "high") {
                     $("#elementarySchool").hide();
                     $("#middleSchool").hide();
                     $("#highSchool").show();
                 }
 
             });
+
+            $(".menu-icon").click(function (event) {
+                $(".main-menu").removeClass("d-none");
+                $(".main-menu").addClass("d-block");
+            });
+
+            $(".cross-icon").click(function (event) {
+                $(".main-menu").removeClass("d-block");
+                $(".main-menu").addClass("d-none");
+            });
+
         });
     </script>
 </body>

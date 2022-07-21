@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise Me Up</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper bg-color">
+        <h6 class="top-bar pt-42"></h6>
+        <div class="my-20">
+            <a href="index.html">
+                <img class="img-fluid dashbord-logo" src="assets/img/logo.png" alt="">
+            </a>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="main-menu fade d-none">
+            <div class="menu-dialog menu-width menu-r">
+                <div class="cross">
+                    <a href="#">
+                        <img class="cross-icon" src="assets/img/cross.svg" alt="">
+                    </a>
+                </div>
+                <div class="profile">
+                    <h3 class="profile-name">Md User Name</h3>
+                </div>
+                <div class="menu pt-96 mr-36"">
+                    <ul class="">
+                        <li class=" menu-list"><a class="menu-link text-d text-white" href="#">Dashboard</a></li>
+                    <li class="menu-list pt-8"><a class="menu-link text-d text-white" href="#">Logout</a> </li>
+                    <!-- <li><a href="#">About</a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- mobile menu icon -->
+        <div class="menu-icon">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+
+        <div class="mb-40 dashbord-tittle">
+            <h4 class="text-center">Handle with Care Incident</h4>
+        </div>
+        <div class="section px-24">
+            <form class="form px-25 pb-30" action="#">
+                <div class="mb-24 ">
+                    <!-- Students First Name -->
+                    <div class="form-group fmb-0">
+                        <label for="students_f_name" class="form-label">Students First Name</label>
+                        <input type="text" class="form-control form-material" name="students_f_name" required
+                            placeholder="Students First Name">
+                    </div>
+
+                    <!-- Students Last Name  -->
+                    <div class="form-group fmb-0 pt-24">
+                        <label for="students_f_name" class="form-label">Students Last Name </label>
+                        <input type="text" class="form-control form-material" name="students_l_name"
+                            placeholder="Students Last Name">
+                    </div>
+
+                    <!-- Student Grade  -->
+                    <div class="form-group fmb-0 pt-24">
+                        <label for="grade" class="form-label">Student Grade </label>
+                        <input type="text" class="form-control form-material" name="grade" placeholder="Student Grade ">
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="form-group fmb-0 pt-24">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select name="gender" class="form-control form-material school-click">
+                            <option selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+
+                    <!-- Phone No.  -->
+                    <div class="form-group fmb-0 pt-24 pb-30">
+                        <label for="phone" class="form-label">Phone No.</label>
+                        <input type="text" class="form-control form-material" name="phone" placeholder="Phone">
+                    </div>
+
+                </div>
+
+
+                <button class="btn d-block px-28" type="submit">SUBMIT</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+
+            // menu jquery code
+
+            $(".menu-icon").click(function (event) {
+                $(".main-menu").removeClass("d-none");
+                $(".main-menu").addClass("d-block");
+            });
+
+            $(".cross-icon").click(function (event) {
+                $(".main-menu").removeClass("d-block");
+                $(".main-menu").addClass("d-none");
+            });
+
+        });
+    </script>
+</body>
+
+</html>

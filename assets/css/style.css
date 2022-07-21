@@ -620,7 +620,7 @@ input[type="radio"]:checked {
 
 .menu-dialog {
   position: fixed;
-  top: 70px;
+  top: 50px;
 }
 
 .menu-width {
@@ -798,3 +798,57 @@ input[type="radio"]:checked {
   background-color: #f32453;
   margin: 6px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1920px) {}
+@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 428px) {}
+@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 393px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 280px) {}
+
+
+
+
+
+/* 
+
+@media only screen and (max-width: 1920px) {}
+@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 428px) {}
+@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 393px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 280px) {}
+
+*/

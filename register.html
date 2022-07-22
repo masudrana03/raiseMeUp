@@ -18,54 +18,42 @@
             <a href="index.html"><img class="img-fluid" src="assets/img/logo.png" alt=""></a>
         </div>
         <div class="section px-24">
-            <form class="form px-25" action="#">
+            <form class="form px-25 pb-30" action="#">
                 <div class="mb-32">
                     <!-- Fast Name -->
                     <div class="form-group fmb-0">
                         <label for="First Name" class="form-label">First Name</label>
                         <input type="text" class="form-control form-material" required placeholder="First Name">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
                     <!-- Last Name -->
                     <div class="form-group fmb-0 pt-24">
                         <label for="Last Name" class="form-label">Last Name</label>
                         <input type="text" class="form-control form-material" placeholder="First Name">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
                     <!-- Email -->
                     <div class="form-group fmb-0 pt-24">
                         <label for="Email" class="form-label">Email</label>
                         <input type="email" class="form-control form-material" required placeholder="Email">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
                     <!-- Agency -->
                     <div class="form-group fmb-0 pt-24">
                         <label for="agency" class="form-label">Agency</label>
                         <input type="text" class="form-control form-material" placeholder="Agency">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
+                    <!-- Password -->
                     <div class="form-group fmb-0 pt-24">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control form-material" required placeholder="********">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
 
                     <div class="form-group fmb-0 pt-24">
-                        <label for="password_confirmation" class="form-label">Cnfirm Password</label>
+                        <label for="password_confirmation" class="form-label">Confirm Password</label>
                         <input type="password" required class="form-control form-material" placeholder="********">
-                        <!-- <span class="pass-icon">&nbsp;</span> -->
                     </div>
-
-                    <!-- <div class="pt-14">
-                        <span class="form-check form-material form-check-32">
-                            <input class="form-check-input" type="checkbox" id="checkChecked">
-                            <label class="form-check-label" for="checkChecked">Remember me</label>
-                        </span>
-                    </div> -->
                 </div>
 
 
@@ -75,20 +63,6 @@
         </div>
     </div>
 
-    <!-- <script>
-        $(document).on('click', '.form-password .pass-icon', function (e) {
-            e.preventDefault();
-            $thisPa = $(this).closest('.form-password');
-      
-            if($thisPa.find('input[type=password]').length){
-                $thisPa.find('input[type=password]').attr('type', 'text');
-            }else{
-                $thisPa.find('input[type=text]').attr('type', 'password');
-            }
-    
-            return false;
-        });
-    </script> -->
     <script>
         $(document).ready(function () {
             // alert('Hello');
